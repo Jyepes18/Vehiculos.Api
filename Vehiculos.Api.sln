@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vehiculos.Api", "Vehiculos.Api\Vehiculos.Api.csproj", "{0B2A025A-7BB6-4F23-AD47-FC188858AF78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vehiculos.Domain", "Vehiculos.Domain\Vehiculos.Domain.csproj", "{55F59C5B-5303-465F-A7E6-F1FC7F5750CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vehiculos.Infrastructure", "Vehiculos.Infrastructure\Vehiculos.Infrastructure.csproj", "{848BDD59-6CA7-4CC5-BD5C-528720BAA84F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B2A025A-7BB6-4F23-AD47-FC188858AF78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B2A025A-7BB6-4F23-AD47-FC188858AF78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B2A025A-7BB6-4F23-AD47-FC188858AF78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B2A025A-7BB6-4F23-AD47-FC188858AF78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55F59C5B-5303-465F-A7E6-F1FC7F5750CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55F59C5B-5303-465F-A7E6-F1FC7F5750CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55F59C5B-5303-465F-A7E6-F1FC7F5750CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55F59C5B-5303-465F-A7E6-F1FC7F5750CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{848BDD59-6CA7-4CC5-BD5C-528720BAA84F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{848BDD59-6CA7-4CC5-BD5C-528720BAA84F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{848BDD59-6CA7-4CC5-BD5C-528720BAA84F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{848BDD59-6CA7-4CC5-BD5C-528720BAA84F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
