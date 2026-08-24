@@ -17,8 +17,4 @@
       <ProjectReference Include="..\Vehiculos.Infrastructure\Vehiculos.Infrastructure.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="DTOs\Inspecciones\" />
-    </ItemGroup>
-
 </Project>

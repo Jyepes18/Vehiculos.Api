@@ -21,6 +21,8 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IVehiculoService, VehiculoService>();
 builder.Services.AddScoped<IVehiculoRepository, VehiculoRepository>();
+builder.Services.AddScoped<IInspeccionService, InspeccionService>();
+builder.Services.AddScoped<IInspeccionRepository, InspeccionRepository>();
 
 var app = builder.Build();
 
