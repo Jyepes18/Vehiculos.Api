@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vehiculos.Domain", "Vehicul
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vehiculos.Infrastructure", "Vehiculos.Infrastructure\Vehiculos.Infrastructure.csproj", "{848BDD59-6CA7-4CC5-BD5C-528720BAA84F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vehiculos.Tets", "Vehiculos.Tets\Vehiculos.Tets.csproj", "{5E4176D2-BCFF-4731-A4AD-6F178100BA05}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{848BDD59-6CA7-4CC5-BD5C-528720BAA84F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{848BDD59-6CA7-4CC5-BD5C-528720BAA84F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{848BDD59-6CA7-4CC5-BD5C-528720BAA84F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E4176D2-BCFF-4731-A4AD-6F178100BA05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E4176D2-BCFF-4731-A4AD-6F178100BA05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E4176D2-BCFF-4731-A4AD-6F178100BA05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E4176D2-BCFF-4731-A4AD-6F178100BA05}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
