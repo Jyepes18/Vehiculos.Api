@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Vehiculos.Api.Middleware;
 using Vehiculos.Api.Services;
 using Vehiculos.Api.Services.Interfaces;
 using Vehiculos.Infrastructure.Persistence;
@@ -32,6 +33,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseMiddleware<ExceptionMiddleware>();
 
 app.UseHttpsRedirection();
 
