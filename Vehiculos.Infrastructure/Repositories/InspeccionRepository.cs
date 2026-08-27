@@ -18,7 +18,7 @@ public class InspeccionRepository : IInspeccionRepository
     {
         return await _context.inspecciones
             .Where(x => x.VehiculoId == vehiculoId)
-            .Select(x => x.Kilometraje)
+            .Select(x => (int?)x.Kilometraje)
             .MaxAsync();
     }
 
@@ -31,11 +31,12 @@ public class InspeccionRepository : IInspeccionRepository
     public async Task<(IEnumerable<Inspeccion>, int Total)> InspeccioneVehiculo(int vehiculoId, int page, int pageSize)
     {
         var consulta = _context.inspecciones.AsQueryable();
-        int totalInspeccionesVehiculo = await consulta.CountAsync();
+        int totalInspeccionesVehiculo = await consulta.Where(x => x.VehiculoId == vehiculoId).CountAsync();
         var resultado = await consulta
             .OrderByDescending(f => f.Id)
             .Skip((page - 1) * pageSize)
             .Take(pageSize)
+            .Where(x=> x.VehiculoId == vehiculoId)
             .ToListAsync();
 
         return (resultado, totalInspeccionesVehiculo);

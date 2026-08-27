@@ -88,4 +88,21 @@ public class VehiculoService : IVehiculoService
 
         return Result<string>.Success("Vehículo actualizado correctamente.");
     }
+    
+    public async Task<Result<string>> ActivarVehiculo(int id)
+    {
+        var vehiculo = await _vehiculoRepository.ObtenerVehiculo(id);
+        if (vehiculo is null)
+            return Result<string>.Fail("El vehículo no existe.");
+
+        if (vehiculo.Activo)
+            return Result<string>.Fail("El vehículo ya está activo.");
+        
+        var resultado = await _vehiculoRepository.ActivarVehiculo(vehiculo);
+
+        if (!resultado)
+            return Result<string>.Fail("No se pudo activar el vehículo.");
+
+        return Result<string>.Success("Vehículo activar correctamente.");
+    }
 }

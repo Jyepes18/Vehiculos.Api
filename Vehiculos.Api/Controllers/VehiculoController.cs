@@ -39,7 +39,7 @@ public class VehiculoController : ControllerBase
     }
     
     [HttpDelete]
-    [Route("eliminar/{id::int}")]
+    [Route("desactivar/{id::int}")]
     public async Task<IActionResult> DesactivarVehiculo([FromRoute] int id)
     {
         return Ok(await _vehiculoService.DesactivarVehiculo(id));
@@ -50,5 +50,12 @@ public class VehiculoController : ControllerBase
     public async Task<IActionResult> DesactivarVehiculo([FromRoute] int id, [FromBody] VehiculoDto vehiculoDto)
     {
         return Ok(await _vehiculoService.ActualizarVehiculo(id, vehiculoDto));
+    }
+    
+    [HttpPut]
+    [Route("activar/{id::int}")]
+    public async Task<IActionResult> ActivarVehiculo([FromRoute] int id)
+    {
+        return Ok(await _vehiculoService.ActivarVehiculo(id));
     }
 }

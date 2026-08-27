@@ -11,4 +11,5 @@ public interface IVehiculoRepository
     Task<bool> DesactivarVehiculo(Vehiculo vehiculo);
     Task<bool> ValidarPlacaRepetida(int id, string placa);
     Task<bool> ActualizarVehiculo(Vehiculo vehiculo);
+    Task<bool> ActivarVehiculo(Vehiculo vehiculo);
 }

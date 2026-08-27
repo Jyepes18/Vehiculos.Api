@@ -57,6 +57,13 @@ public class VehiculoRepository : IVehiculoRepository
         return await _context.SaveChangesAsync() > 0;
     }
     
+    public async Task<bool> ActivarVehiculo(Vehiculo vehiculo)
+    {
+        vehiculo.Activo = true;
+        return await _context.SaveChangesAsync() > 0;
+    }
+
+    
     public async Task<bool> ValidarPlacaRepetida(int id, string placa)
     {
         return await _context.vehiculos.AnyAsync(x => x.Placa == placa && x.Id != id);

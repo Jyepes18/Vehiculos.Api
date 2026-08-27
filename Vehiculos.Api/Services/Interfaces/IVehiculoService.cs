@@ -11,4 +11,5 @@ public interface IVehiculoService
     Task<Result<Vehiculo>> ObtenerVehiculo(int id);
     Task<Result<string>> DesactivarVehiculo(int id);
     Task<Result<string>> ActualizarVehiculo(int id, VehiculoDto vehiculoDto);
+    Task<Result<string>> ActivarVehiculo(int id);
 }

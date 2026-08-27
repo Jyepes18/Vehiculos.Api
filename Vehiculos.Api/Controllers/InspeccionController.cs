@@ -29,6 +29,6 @@ public class InspeccionController : ControllerBase
         [FromQuery] InspeccionFilter inspeccionFilter)
     {
         var resultado = await _inspeccionService.InspeccioneVehiculo(vehiculoId, inspeccionFilter);
-        return Ok(new { resultado.Value.Item1, resultado.Value.Total });
+        return Ok(new { Data = resultado.Value.Item1, resultado.Value.Total });
     }
 }
